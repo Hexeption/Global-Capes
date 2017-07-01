@@ -79,7 +79,7 @@ shadowJar {
 }
 
 mixin {
-    add sourceSets.main, "mixin.globalcapes.json"
+    add sourceSets.main, "mixin.globalcapes.remap.json"
 }
 
 reobf {

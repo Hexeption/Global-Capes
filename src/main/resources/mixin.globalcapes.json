@@ -2,7 +2,7 @@
   "required": true,
   "compatibilityLevel": "JAVA_8",
   "package": "uk.co.hexeption.mixin",
-  "refmap": "mixins.globalcapes.refmap.json",
+  "refmap": "mixin.globalcapes.remap.json",
   "mixins": [
     "MixinAbstractClientPlayer"
   ]
