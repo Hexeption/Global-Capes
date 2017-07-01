@@ -1,4 +1,4 @@
-package uk.co.hexeption.capeapi;
+package uk.co.hexeption.loader;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.spongepowered.asm.launch.MixinBootstrap;
@@ -14,7 +14,7 @@ public class MixinLoader implements IFMLLoadingPlugin {
     public MixinLoader() {
 
         MixinBootstrap.init();
-        Mixins.addConfiguration("mixin.mcwrapper.json");
+        Mixins.addConfiguration("mixin.globalcapes.json");
     }
 
     @Override

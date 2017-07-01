@@ -11,7 +11,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT"
+        classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
         classpath "org.spongepowered:mixingradle:0.4-SNAPSHOT"
         classpath "com.github.jengelman.gradle.plugins:shadow:1.2.3"
     }
@@ -44,8 +44,11 @@ repositories {
 }
 
 dependencies {
-    compile("org.spongepowered:mixin:0.6.4-SNAPSHOT") {
+    compile("org.spongepowered:mixin:0.6.10-SNAPSHOT") {
         exclude module: "launchwrapper"
+        exclude module: 'guava'
+        exclude module: 'gson'
+        exclude module: 'commons-io'
     }
 }
 
@@ -91,11 +94,10 @@ build.dependsOn(shadowJar)
 jar {
     manifest {
         attributes(
-                "MixinConfigs": 'mixin.mcwrapper.json',
+                "MixinConfigs": 'mixin.globalcapes.json',
                 "tweakClass": 'org.spongepowered.asm.launch.MixinTweaker',
                 "TweakOrder": 0,
-                'FMLCorePluginContainsFMLMod': 'uk.co.hexeption.capeapi.MixinLoader',
-                'FMLAT': 'capeapi_at.cfg')
+                'FMLCorePluginContainsFMLMod': 'uk.co.hexeption.loader.MixinLoader')
     }
 }
 

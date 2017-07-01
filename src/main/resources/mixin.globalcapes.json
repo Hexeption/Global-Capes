@@ -4,7 +4,6 @@
   "package": "uk.co.hexeption.mixin",
   "refmap": "mixins.globalcapes.refmap.json",
   "mixins": [
-    "MixinAbstractClientPlayer",
-    "MixinEntityPlayer"
+    "MixinAbstractClientPlayer"
   ]
 }
