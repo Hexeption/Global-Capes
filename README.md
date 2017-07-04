@@ -1,4 +1,4 @@
-# Global Capes [![GitHub Release](http://github-release-version.herokuapp.com/github/hexeption/Global-Capes/release.svg)](https://github.com/Hexeption/Global-Capes/releases)
+# Global Capes [![GitHub Release](http://github-release-version.herokuapp.com/github/hexeption/Global-Capes/release.svg)](https://github.com/Hexeption/Global-Capes/releases) [![GitHub Release]( http://cf.way2muchnoise.eu/versions/262967.svg)](https://github.com/Hexeption/Global-Capes/releases)
 
 ## About Global Capes
 
