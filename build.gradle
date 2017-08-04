@@ -33,6 +33,7 @@ minecraft {
     version = project.forgeVersion
     runDir = "run"
     mappings = project.mcpVersion
+    coreMod = "uk.co.hexeption.loader.MixinLoader"
 }
 
 repositories {
